@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- Heading section-->
+	<section>
+		<div class=" container text-center text-bg-primary p-3">
+			<h2 class="">Insurance Report Genration</h2>
+		</div>
+	</section>
+	<!-- data filter and search section-->
+	<section>
+		
+		<div class="container justify-content-center mt-5  ">
+			<div class="row ">
+				<div class="col-md-2">
+					<div class="form-group">
+						<label for="planName">Plan Name:</label>
+						<select class="form-control" id="planName" name="planName">
+							<option value="">-Select Plan Name-</option>
+							<option value="">-Select Plan Name-</option>
+							<!-- Populate with plan name options -->
+						</select>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="form-group">
+						<label for="planStatus">Plan Status:</label>
+						<select class="form-control" id="planStatus" name="planStatus">
+							<option value="">-Select Plan Status-</option>
+							<!-- Populate with plan status options -->
+						</select>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="form-group">
+						<label for="gender">Gender:</label>
+						<select class="form-control" id="gender" name="gender">
+							<option value="">-Select Gender-</option>
+							<!-- Populate with gender options -->
+						</select>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="form-group">
+						<label for="startDate">Start Date:</label>
+						<input type="date" class="form-control" id="startDate" name="startDate">
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="form-group">
+						<label for="endDate">End Date:</label>
+						<input type="date" class="form-control" id="endDate" name="endDate">
+					</div>
+				</div>
+				<div class="col-md-2 mt-4">
+					<div class="form-group">
+						<label></label> <!-- Empty label for spacing -->
+						<button type="submit" class="btn btn-primary btn-block">Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- show data section-->
+	<section>
+	<div class="container mt-4">
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Plan Name</th>
+							<th>Plan Status</th>
+							<th>Gender</th>
+							<th>Start Date</th>
+							<th>End Date</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Populate the table rows with data -->
+						<tr>
+							<td>Plan 1</td>
+							<td>Active</td>
+							<td>Male</td>
+							<td>2023-01-01</td>
+							<td>2023-12-31</td>
+						</tr>
+						
+						<!-- Add more rows as needed -->
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	</div>
+	</section>
+	<section>
+	<!-- download in excel and pdf format section-->
+	<div class="container">
+		<label class="text-primary">Download :</label>
+		<button type="button" class="btn btn-success m-3">Excel</button>
+		<button type="button" class="btn btn-danger">Pdf</button>
+	</div>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
